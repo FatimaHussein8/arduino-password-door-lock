@@ -1,10 +1,10 @@
-#  🔐 Arduino Password-Based Door Lock System
+#  Arduino Password-Based Door Lock System
 
 This project implements a secure door lock mechanism using an Arduino Uno, a 4×4 matrix keypad, a servo motor, and an LCD display. Users must enter a correct 4-digit password to open the door; multiple failed attempts lock the system until reset.
 
 ---
 
-##  🛠️ Components Used
+##  Components Used
 
 - **Arduino Uno**  
 - **4×4 Matrix Keypad**  
@@ -18,7 +18,7 @@ This project implements a secure door lock mechanism using an Arduino Uno, a 4×
 
 ---
 
-##  ⚙️ Hardware Connections
+##  Hardware Connections
 
 1. **Keypad**  
    - Rows → Arduino digital pins: `rowPins = {0, 1, 2, 3}`  
@@ -43,11 +43,11 @@ This project implements a secure door lock mechanism using an Arduino Uno, a 4×
    - Success LED → Arduino digital pin `7` (through 220 Ω resistor)  
    - Failure LED → Arduino digital pin `8` (through 220 Ω resistor)  
 
-> 💡 _In this implementation, LEDs are not mandatory because the LCD provides text feedback and the servo motion indicates lock/unlock._
+>  _In this implementation, LEDs are not mandatory because the LCD provides text feedback and the servo motion indicates lock/unlock._
 
 ---
 
-##  📷 Circuit Diagram
+##  Circuit Diagram
 
 ![Circuit Diagram](door_lock_diagram.png)
 
@@ -55,7 +55,7 @@ This project implements a secure door lock mechanism using an Arduino Uno, a 4×
 
 ---
 
-##  ⚙️ How It Works: Detailed Logic
+##  How It Works: Detailed Logic
 
 1. **Initialization**  
    - Attach the `Servo` object to digital pin 9; it rotates from 0° (locked) to 90° (unlocked).  
@@ -93,7 +93,7 @@ This project implements a secure door lock mechanism using an Arduino Uno, a 4×
 
 ---
 
-##  🧠 Full Arduino Code
+##  Full Arduino Code
 
 ```cpp
 #include <Keypad.h>
